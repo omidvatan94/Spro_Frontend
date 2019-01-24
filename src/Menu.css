@@ -1,0 +1,70 @@
+#flyoutMenu {
+  width: 20vw;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform .8s
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 1000;
+}
+
+#flyoutMenu.hide {
+  transform: translate3d(-100vw, 0, 0);
+}
+
+#flyoutMenu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+  box-shadow: 0 4px 2000px 0 rgba(0, 0, 0, 0.2), 0 6px 2000px 0 rgba(0, 0, 0, 0.19);
+}
+
+#flyoutMenu h2 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 100;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#flyoutMenu h2 a:hover {
+  text-decoration: underline;
+}
+
+#flyoutMenu h4 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 100;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#flyoutMenu h4 a:hover {
+  text-decoration: underline;
+}
+
+#flyoutMenu h5 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 100;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#flyoutMenu h5 a:hover {
+  text-decoration: underline;
+}
+
+#flyoutMenu h6 a {
+  color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 100;
+	font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#flyoutMenu h6 a:hover {
+  text-decoration: underline;
+}
