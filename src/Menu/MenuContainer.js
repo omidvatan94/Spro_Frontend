@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import MenuButton from './MenuButton.js'
 import Menu from './Menu.js'
-import logo from './logo.png'
-import BeanCard from './BeanCard'
-import Favorites from './Favorites'
-import { Link, Switch, Route} from 'react-router-dom';
-import MapContainer from './MapContainer'
+import logo from '../logo.png'
+import BeanCard from '../Beans/BeanCard'
+
 
 class MenuContainer extends Component {
   constructor(props, context) {
   super(props, context);
 
-  let filtered;
+
 
   this.state = {
     visible: false,
@@ -97,7 +95,7 @@ mappedFavorites = () => {
   let newArr;
   let favs;
   let myBeanIds;
-  let beans;
+  
   let filtered;
   fetch("http://localhost:3000/favorites")
   .then(res => res.json())

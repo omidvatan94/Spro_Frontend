@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import StarRatingComponent from 'react-star-rating-component';
-import { Link } from 'react-router-dom'
-import { Switch, Route} from 'react-router-dom';
-import MenuContainer from './MenuContainer'
-import MapContainer from './MapContainer'
+import MapContainer from '../Map/MapContainer'
 
 
 class BeanDisplay extends Component {
@@ -97,7 +94,7 @@ class BeanDisplay extends Component {
   // }
 
   showingDisplay = () => {
-    const { rating } = this.state.rating;
+    
     return (
       <div className="fixedElement">
       <button id="button1" onClick={(e) => this.props.goBack(e)} type="button">Go Back</button>
